@@ -12,7 +12,7 @@ void main()
     if (pid == 0)
     {
         printf("I am the child!");
-        execl("/bin/ls", "ls", "-l", "/home/manojad", (char *)0);
+        execl("/bin/ls", "ls", "-l", "/home/some", (char *)0);
         perror("In exec(): ");
     }
     if (pid > 0)

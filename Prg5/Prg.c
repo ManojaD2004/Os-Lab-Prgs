@@ -50,16 +50,18 @@ A:
             if ((need[i][j] <= work[j]) && (finish[i] == 'n'))
                 c++;
 
+
         if (c == m)
         {
             printf("All the resources can be allocated to Process %d", i + 1);
             printf("\n\nAvailable resources are:");
-            
+
             for (k = 0; k < m; k++)
             {
                 work[k] += alloc[i][k];
                 printf("%4d", work[k]);
             }
+            
             printf("\n");
             finish[i] = 'y';
             done[z++] = i + 1;
